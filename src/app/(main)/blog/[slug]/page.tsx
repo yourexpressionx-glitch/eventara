@@ -5,8 +5,66 @@
 
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { BLOG_ARTICLES } from '@/lib/blog-articles';
+import { BLOG_ARTICLES } from '@/lib/blog-articles-with-content';
 import { Breadcrumb } from '@/components/sections/Breadcrumb';
+
+// Helper function to render markdown-like content
+function renderArticleContent(content: string) {
+  const lines = content.split('\n');
+  return lines.map((line, idx) => {
+    const trimmed = line.trim();
+    if (!trimmed) return null;
+
+    if (trimmed.startsWith('# ')) {
+      return (
+        <h1 key={idx} className="font-playfair text-3xl md:text-4xl font-bold text-white mt-8 mb-4">
+          {trimmed.replace(/^# /, '')}
+        </h1>
+      );
+    }
+    if (trimmed.startsWith('## ')) {
+      return (
+        <h2 key={idx} className="font-playfair text-2xl font-bold text-event-gold mt-8 mb-4">
+          {trimmed.replace(/^## /, '')}
+        </h2>
+      );
+    }
+    if (trimmed.startsWith('### ')) {
+      return (
+        <h3 key={idx} className="font-playfair text-xl font-bold text-light-gold mt-6 mb-3">
+          {trimmed.replace(/^### /, '')}
+        </h3>
+      );
+    }
+    if (trimmed.startsWith('- ')) {
+      return (
+        <li key={idx} className="ml-6 mb-2">
+          {trimmed.replace(/^- /, '')}
+        </li>
+      );
+    }
+    if (trimmed.startsWith('✓ ')) {
+      return (
+        <li key={idx} className="ml-6 mb-2 text-event-gold">
+          ✓ {trimmed.replace(/^✓ /, '')}
+        </li>
+      );
+    }
+    if (trimmed.startsWith('❌ ')) {
+      return (
+        <li key={idx} className="ml-6 mb-2 text-light-gold">
+          {trimmed}
+        </li>
+      );
+    }
+    
+    return (
+      <p key={idx} className="text-gray-300 leading-relaxed">
+        {line}
+      </p>
+    );
+  }).filter(Boolean);
+}
 
 interface BlogArticlePageProps {
   params: Promise<{
@@ -92,25 +150,8 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
           </header>
 
           {/* Article Content */}
-          <article className="prose prose-invert max-w-none mb-12">
-            <div className="font-inter text-gray-300 leading-relaxed space-y-6">
-              <p>
-                {article.excerpt}
-              </p>
-              <p>
-                This comprehensive guide covers everything you need to know about this topic. 
-                Whether you're a first-time event planner or a seasoned professional, 
-                this article provides actionable insights and expert recommendations.
-              </p>
-              <h2 className="text-2xl font-bold text-event-gold mt-8 mb-4">Key Takeaways</h2>
-              <ul className="list-disc list-inside space-y-2 text-gray-300">
-                <li>Professional planning saves 30-40% on costs</li>
-                <li>Venue selection impacts your entire event experience</li>
-                <li>Budget allocation should prioritize guest experience</li>
-                <li>Timeline management is crucial for success</li>
-                <li>Vendor coordination requires clear communication</li>
-              </ul>
-            </div>
+          <article className="font-inter text-gray-300 leading-relaxed space-y-6 mb-12">
+            {article.content && renderArticleContent(article.content)}
           </article>
 
           {/* Internal Links Section */}

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { BLOG_ARTICLES } from '@/lib/blog-articles';
+import { BLOG_ARTICLES } from '@/lib/blog-articles-with-content';
 
 export function BlogGrid() {
   // Use first 6 articles from the comprehensive blog database
