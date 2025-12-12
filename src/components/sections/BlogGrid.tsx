@@ -1,58 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { BLOG_ARTICLES } from '@/lib/blog-articles';
 
 export function BlogGrid() {
-  const blogPosts = [
-    {
-      title: 'The Ultimate Guide to Planning a Destination Wedding in Darjeeling',
-      excerpt:
-        'Learn how to plan the perfect destination wedding in the Queen of the Hills. Tips on venues, logistics, and budget.',
-      date: 'Dec 10, 2025',
-      category: 'Weddings',
-      readTime: '5 min read',
-    },
-    {
-      title: 'Top Pandal Decoration Trends for 2025',
-      excerpt:
-        'Explore the latest trends in pandal decoration, from modern minimalism to traditional themes. Get inspired!',
-      date: 'Dec 8, 2025',
-      category: 'Decoration',
-      readTime: '4 min read',
-    },
-    {
-      title: 'Corporate Event Planning: From Concept to Execution',
-      excerpt:
-        'A complete guide to planning successful corporate events. Learn about venue selection, logistics, and team building.',
-      date: 'Dec 5, 2025',
-      category: 'Corporate',
-      readTime: '6 min read',
-    },
-    {
-      title: 'Bridal Care Tips: Look Your Best on Your Special Day',
-      excerpt:
-        'Complete bridal care guide including skincare routine, makeup preparation, and wellness tips for your wedding.',
-      date: 'Dec 1, 2025',
-      category: 'Wedding Tips',
-      readTime: '5 min read',
-    },
-    {
-      title: 'DJ vs Live Band: Choosing the Right Music for Your Event',
-      excerpt:
-        'Explore the pros and cons of DJ services vs live bands. Find the perfect entertainment solution for your event.',
-      date: 'Nov 28, 2025',
-      category: 'Entertainment',
-      readTime: '4 min read',
-    },
-    {
-      title: 'Destination Wedding Logistics: A Complete Checklist',
-      excerpt:
-        'Master the logistics of destination events. Hotels, travel, accommodation, and guest management guide.',
-      date: 'Nov 25, 2025',
-      category: 'Logistics',
-      readTime: '7 min read',
-    },
-  ];
+  // Use first 6 articles from the comprehensive blog database
+  const blogPosts = BLOG_ARTICLES.slice(0, 6).map(article => ({
+    slug: article.slug,
+    title: article.title,
+    excerpt: article.excerpt,
+    date: new Date(article.date).toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'short', 
+      day: 'numeric' 
+    }),
+    category: article.category,
+    readTime: `${article.readTime} min read`,
+  }));
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -82,11 +46,12 @@ export function BlogGrid() {
           viewport={{ once: true }}
         >
           {blogPosts.map((post, idx) => (
-            <motion.div
+            <motion.a
               key={idx}
+              href={`/blog/${post.slug}`}
               variants={itemVariants}
               whileHover={{ translateX: 8 }}
-              className="card-luxury p-8 hover:border-event-gold/60 transition-colors cursor-pointer group"
+              className="card-luxury p-8 hover:border-event-gold/60 transition-colors cursor-pointer group block"
             >
               <div className="flex items-start justify-between mb-4">
                 <span className="inline-block px-3 py-1 bg-event-gold/20 text-event-gold text-xs font-semibold rounded">
@@ -107,7 +72,7 @@ export function BlogGrid() {
                   Read More →
                 </span>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
 
