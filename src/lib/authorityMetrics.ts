@@ -128,8 +128,7 @@ export const INTERNAL_LINK_ARCHITECTURE = {
  * Calculate authority distribution across link hierarchy
  */
 export function calculateAuthorityFlow(
-  externalBacklinks: number,
-  averageBacklinkDA: number
+  externalBacklinks: number
 ) {
   // Simplified calculation
   const homepagePA = Math.min(externalBacklinks * 0.5, 50);
