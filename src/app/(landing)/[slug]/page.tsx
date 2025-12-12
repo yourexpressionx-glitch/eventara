@@ -52,7 +52,6 @@ export async function generateMetadata({
   return {
     title,
     description,
-    canonical,
     keywords: [
       ...service.keywords,
       location.name,
