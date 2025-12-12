@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { motion } from 'framer-motion';
-import { LOCATIONS, SERVICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Luxury Event Management | Eventara',

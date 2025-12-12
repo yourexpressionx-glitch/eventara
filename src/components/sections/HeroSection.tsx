@@ -16,7 +16,6 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({
-  title,
   subtitle,
   service,
   location,

@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 interface ServiceSchemaProps {
   service: string;
   location: string;

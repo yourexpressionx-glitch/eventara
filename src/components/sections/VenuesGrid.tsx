@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { LOCATIONS } from '@/lib/constants';
 
 export function VenuesGrid() {
   const venues = [

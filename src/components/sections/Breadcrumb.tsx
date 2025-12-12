@@ -16,8 +16,6 @@ export function Breadcrumb({
   serviceDisplay = service.replace(/-/g, ' '),
   locationDisplay = location.replace(/-/g, ' '),
 }: BreadcrumbProps) {
-  const router = useRouter();
-
   // Capitalize first letter
   const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
   const displayService = capitalize(serviceDisplay);
