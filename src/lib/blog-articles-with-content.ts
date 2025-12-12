@@ -1935,6 +1935,349 @@ Your wedding menu is one of the most memorable aspects of your special day. Inve
       role: 'Wedding Catering Specialists',
     },
   },
+  // ===== ADDITIONAL ARTICLES (8-10) =====
+  {
+    id: '8',
+    slug: 'pandal-decoration-trends-2025',
+    title: 'Pandal Decoration Trends 2025: Modern Designs & Inspirations',
+    excerpt: 'Explore latest pandal decoration trends for 2025. Learn modern designs, color palettes, materials, and how to create Instagram-worthy temporary structures.',
+    content: `# Pandal Decoration Trends 2025: Modern Designs & Inspirations
+
+Pandal decoration has evolved significantly. In 2025, the trend combines cultural heritage with modern aesthetics, sustainability, and visual impact.
+
+## 2025 Trending Color Palettes
+
+**Jewel Tones with Gold**
+- Deep emerald, sapphire, amethyst
+- Gold accents and uplighting
+- Rich, luxurious feel
+- Perfect for evening events
+
+**Minimalist Neutrals**
+- Whites, creams, soft grays
+- Gold or copper accents
+- Clean lines and modern feel
+- Photogenic and elegant
+
+**Earthy & Natural**
+- Terracotta, ochre, sage green
+- Natural textures
+- Sustainable approach
+- Warm, inviting atmosphere
+
+**Bold Statement Colors**
+- Deep burgundy with gold
+- Navy with silver accents
+- Black with floral installations
+- Dramatic and sophisticated
+
+## Modern Design Concepts
+
+**Contemporary Geometric**
+- Clean lines and shapes
+- Modern architectural elements
+- Minimalist approach
+- Geometric lighting patterns
+
+**Floral Paradise**
+- Abundant fresh flowers
+- Multi-level arrangements
+- Hanging installations
+- Romantic aesthetic
+
+**Mirror & Glass Elegance**
+- Mirror work accents
+- Glass chandeliers
+- Reflective surfaces
+- Premium feel
+
+**Industrial Chic**
+- Metal frameworks
+- Exposed elements
+- Concrete and stone
+- Urban aesthetic
+
+## Material Innovations
+
+**Sustainable Materials:**
+- Recycled and upcycled decor
+- Biodegradable floral foams
+- Eco-friendly fabrics
+- LED lighting (energy efficient)
+
+**Premium Materials:**
+- Real silk flowers
+- Premium fabrics (velvet, silk)
+- Crystal elements
+- High-end lighting systems
+
+## Lighting Design
+
+**Smart Lighting Systems**
+- Programmable LED systems
+- Color-changing capabilities
+- Music-synchronized lighting
+- App-controlled ambiance
+
+**Dramatic Uplighting**
+- Colored lights on structure
+- Hidden lighting design
+- Spotlight techniques
+- Backlit installations
+
+**Sustainable Lighting**
+- LED everywhere
+- Solar-powered elements
+- Low heat generation
+- Cost-effective solutions
+
+## Floral Design Trends
+
+**Popular Flowers 2025:**
+- Garden roses (romantic)
+- Pampas grass (boho-chic)
+- Orchids (exotic elegance)
+- Seasonal blooms (affordable)
+- Tropical flowers (dramatic)
+
+**Arrangement Styles:**
+- Tall, dramatic arrangements
+- Hanging installations
+- Floral walls and backdrops
+- Mixed texture arrangements
+- Asymmetrical designs
+
+## Budget Breakdown
+
+**Premium:** ₹5-10 lakhs
+- Luxury designs
+- High-end materials
+- Professional teams
+- Intricate details
+
+**Mid-Range:** ₹2-5 lakhs
+- Quality materials
+- Smart design
+- Professional execution
+- Good value
+
+**Budget-Friendly:** ₹50,000-2 lakhs
+- Simple elegant designs
+- DIY elements
+- Cost-effective materials
+- Still stylish
+
+## Conclusion
+
+Pandal decoration in 2025 emphasizes balance between tradition and modernity, sustainability and luxury. Choose designs reflecting your values and vision.`,
+    category: 'Decoration',
+    readTime: 8,
+    date: '2025-01-05',
+    keywords: ['pandal decoration', 'decoration trends 2025', 'temporary structure', 'event decoration'],
+    internalLinks: [
+      { text: 'Pandal Decoration Services', href: '/pandal-decoration-siliguri' },
+      { text: 'Event Decoration', href: '/floral-decor-siliguri' },
+      { text: 'Venue Decoration', href: '/event-decoration-siliguri' },
+    ],
+    author: {
+      name: 'Eventara Design Team',
+      role: 'Decoration Design Specialists',
+    },
+  },
+  {
+    id: '9',
+    slug: 'destination-wedding-planning-guide',
+    title: 'Destination Wedding Planning: Complete Guide',
+    excerpt: 'Expert guide to planning destination weddings. Learn venue selection, travel logistics, guest management, and creating unforgettable experiences.',
+    content: `# Destination Wedding Planning: Complete Guide
+
+Destination weddings offer unique venues, intimate celebrations, and unforgettable memories. This guide covers everything you need to know.
+
+## Why Choose a Destination Wedding?
+
+**Benefits:**
+- Unique venues and backdrops
+- Smaller, more intimate guest lists
+- Extended celebration period
+- Built-in honeymoon element
+- Memorable experiences for guests
+
+**Challenges:**
+- Complex logistics
+- Higher overall costs
+- Travel arrangements
+- Time zone considerations
+- Weather backup plans
+
+## Choose Your Destination
+
+**Popular Locations:**
+
+**Darjeeling Region**
+- Scenic mountain views
+- Romantic ambiance
+- Good vendor availability
+- Accessible from plains
+- Pleasant weather: March-May, September-November
+
+**Kurseong & Mirik**
+- Peaceful settings
+- Tea garden backdrops
+- Unique experiences
+- Less crowded
+- Natural beauty
+
+**Northeast India (Gangtok, Shillong)**
+- Exotic locations
+- Cultural experiences
+- Unique venues
+- Growing vendor infrastructure
+
+**Himalayan Retreats**
+- High-altitude romance
+- Breathtaking backdrops
+- Exclusive venues
+- Premium pricing
+
+## Planning Timeline
+
+**12-18 Months Before:**
+- Choose destination
+- Decide on guest count
+- Set budget
+- Book venue
+- Hire destination planner
+
+**6-9 Months Before:**
+- Arrange travel
+- Book vendors
+- Plan itinerary
+- Finalize accommodations
+
+**3-6 Months Before:**
+- Confirm arrangements
+- Plan pre-wedding activities
+- Coordinate transportation
+
+## Logistics & Travel
+
+**Guest Travel:**
+- Group travel discounts
+- Travel information
+- Flight/train arrangements
+- Local transportation
+- Travel itinerary
+- Visa information
+
+**Accommodation:**
+- Wedding party rooms
+- Guest accommodations
+- Multiple options
+- Group rates
+- Airport transfers
+
+## Legal Requirements
+
+**Documentation:**
+- Marriage license requirements
+- Passport information
+- Visa requirements
+- Local permissions
+- Event permits
+
+Research destination-specific requirements carefully.
+
+## Vendor Selection
+
+**Challenges:**
+- Quality varies by location
+- Limited vendor options
+- Communication challenges
+- Experience level differences
+- Backup importance
+
+**Tips:**
+- Work with local planners
+- Get detailed references
+- Request site visits
+- Detailed contracts
+- Clear payment terms
+
+## Pre-Wedding Activities
+
+**Extended Celebration:**
+
+**Day Before:**
+- Welcome dinner
+- Introduction activities
+- Relaxation time
+
+**Wedding Day:**
+- Morning ceremonies
+- Main celebration
+- Evening reception
+
+**Day After:**
+- Brunch or farewell event
+- Optional activities
+- Guest relaxation
+
+**Optional Activities:**
+- Adventure activities
+- Cultural experiences
+- Spa treatments
+- Group excursions
+
+## Budget Considerations
+
+**Cost Breakdown:**
+
+**Travel & Accommodation:**
+- Guest travel (usually guest pays)
+- Wedding party accommodation (you pay)
+- Your accommodation
+- Staff travel
+
+**Venue & Services:**
+- Venue rental (often higher)
+- Catering
+- Decoration
+- Photography/videography
+
+**Special Costs:**
+- Destination planner (10-20%)
+- Vendor travel costs
+- Backup plans
+- Weather contingency
+
+## Tips for Success
+
+1. **Start Early** - 12-18 months of planning
+2. **Hire a Planner** - Local expertise invaluable
+3. **Research Thoroughly** - Know your destination
+4. **Build in Buffer Time** - Changes happen
+5. **Communicate Clearly** - Keep guests informed
+6. **Plan Activities** - Make it memorable
+7. **Have Backups** - Plan for contingencies
+8. **Be Flexible** - Roll with changes
+
+## Conclusion
+
+Destination weddings create unforgettable experiences. With proper planning, good vendors, clear communication, and flexibility, your celebration will be perfect and memories will last forever.`,
+    category: 'Wedding Planning',
+    readTime: 10,
+    date: '2025-01-01',
+    keywords: ['destination wedding', 'wedding planning', 'Darjeeling wedding', 'destination wedding planning'],
+    internalLinks: [
+      { text: 'Destination Wedding Planners', href: '/wedding-planner-darjeeling' },
+      { text: 'Darjeeling Wedding Venues', href: '/venue-rental-darjeeling' },
+      { text: 'Professional Wedding Coordination', href: '/event-planner-siliguri' },
+    ],
+    author: {
+      name: 'Eventara Destination Team',
+      role: 'Destination Wedding Specialists',
+    },
+  },
 ];
 
 // Re-export with proper naming for blog detail page
