@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /*.json$
+Disallow: /*?*
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+
+# High-priority pages for crawlers
+# Crawl these first
+Crawl-delay: 1
+Request-rate: 10/1s
+
+# Sitemap location
+Sitemap: https://eventaraevents.com/sitemap.xml
+Sitemap: https://eventaraevents.com/sitemap-services.xml
+Sitemap: https://eventaraevents.com/sitemap-locations.xml
+
+# Google Bot - Higher crawl rate
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

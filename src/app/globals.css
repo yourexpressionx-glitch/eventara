@@ -1,0 +1,72 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-rich-black text-gray-100 font-inter;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair font-bold;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 md:px-8;
+  }
+
+  .gradient-gold {
+    @apply bg-gradient-to-r from-event-gold to-light-gold;
+  }
+
+  .card-luxury {
+    @apply bg-gradient-to-br from-event-gold/10 to-light-gold/5 border border-event-gold/30 rounded-xl backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-event-gold text-rich-black font-semibold rounded-lg hover:bg-light-gold transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-event-gold text-event-gold font-semibold rounded-lg hover:bg-event-gold/10 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-event-gold to-light-gold;
+  }
+
+  .blur-gold {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F1C40F;
+}
