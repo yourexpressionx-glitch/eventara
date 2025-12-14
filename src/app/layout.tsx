@@ -89,7 +89,7 @@ export default function RootLayout({
         {/* Organization Schema */}
         <OrganizationSchema siteURL="https://eventaraevents.com" />
       </head>
-      <body className="bg-maroon-950 dark:bg-maroon-950 text-gray-900 dark:text-cream-300">
+      <body className="bg-champagne-50 dark:bg-maroon-950 text-espresso-800 dark:text-cream-300">
         <ThemeProvider>
           <Navbar />
           <main>{children}</main>

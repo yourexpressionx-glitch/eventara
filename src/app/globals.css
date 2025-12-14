@@ -8,12 +8,12 @@
     color-scheme: light dark;
   }
 
-  /* Light mode (default) */
+  /* Light mode (default) - Champagne/Peach theme */
   body {
-    @apply bg-cream-50 text-gray-900 font-inter;
+    @apply bg-champagne-50 text-espresso-800 font-inter;
   }
 
-  /* Dark mode */
+  /* Dark mode - Maroon/Wine theme */
   @media (prefers-color-scheme: dark) {
     body {
       @apply bg-maroon-950 text-cream-300;
@@ -34,12 +34,12 @@
     @apply font-playfair font-bold;
   }
 
-  /* Light mode headings */
+  /* Light mode headings - Espresso brown */
   h1, h2, h3, h4, h5, h6 {
-    @apply text-maroon-700;
+    @apply text-espresso-900;
   }
 
-  /* Dark mode headings */
+  /* Dark mode headings - Cream */
   :is(.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6) {
     @apply text-cream-50;
   }
@@ -54,28 +54,34 @@
     @apply bg-gradient-to-r from-event-gold to-light-gold;
   }
 
-  /* Light mode card */
+  /* Light mode card - Cream white with soft border */
   .card-luxury {
-    @apply bg-gradient-to-br from-event-gold/5 to-light-gold/5 border border-event-gold/20 rounded-xl backdrop-blur-sm;
+    @apply bg-champagne-100 border border-event-gold/15 rounded-xl backdrop-blur-sm;
   }
 
-  /* Dark mode card */
+  /* Dark mode card - Burgundy with gold accent */
   :is(.dark .card-luxury) {
     @apply bg-gradient-to-br from-event-gold/10 to-light-gold/5 border-event-gold/30;
   }
 
-  /* Light mode buttons */
+  /* Light mode buttons - Gold primary */
   .btn-primary {
-    @apply px-6 py-3 bg-event-gold text-maroon-950 font-semibold rounded-lg hover:bg-light-gold transition-colors;
+    @apply px-6 py-3 bg-event-gold text-espresso-900 font-semibold rounded-lg hover:bg-light-gold transition-colors;
   }
 
-  /* Dark mode buttons */
+  /* Dark mode buttons - Gold primary */
   :is(.dark .btn-primary) {
     @apply bg-event-gold text-maroon-950 hover:bg-light-gold;
   }
 
+  /* Light mode secondary button */
   .btn-secondary {
     @apply px-6 py-3 border-2 border-event-gold text-event-gold font-semibold rounded-lg hover:bg-event-gold/10 transition-colors;
+  }
+
+  /* Dark mode secondary button */
+  :is(.dark .btn-secondary) {
+    @apply border-2 border-event-gold text-event-gold hover:bg-event-gold/10;
   }
 }
 
@@ -84,8 +90,13 @@
     @apply text-transparent bg-clip-text bg-gradient-to-r from-event-gold to-light-gold;
   }
 
+  .text-gradient-light {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-event-gold to-coral-600;
+  }
+
   .blur-gold {
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+
   }
 
   /* Mobile Touch Targets - 48px minimum */
