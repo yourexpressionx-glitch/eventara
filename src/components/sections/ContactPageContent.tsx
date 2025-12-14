@@ -197,16 +197,18 @@ export function ContactPageContent() {
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2">
+                  <label className="block font-inter text-sm text-gray-300 mb-2" htmlFor="event-type">
                     Event Type
                   </label>
                   <select
+                    id="event-type"
                     required
                     value={formData.eventType}
                     onChange={(e) =>
                       setFormData({ ...formData, eventType: e.target.value })
                     }
                     className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    aria-label="Event type"
                   >
                     <option value="">Select event type</option>
                     <option value="Wedding">Wedding</option>
@@ -217,16 +219,18 @@ export function ContactPageContent() {
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm text-gray-300 mb-2">
+                  <label className="block font-inter text-sm text-gray-300 mb-2" htmlFor="location">
                     Location
                   </label>
                   <select
+                    id="location"
                     required
                     value={formData.location}
                     onChange={(e) =>
                       setFormData({ ...formData, location: e.target.value })
                     }
                     className="w-full bg-rich-black border border-event-gold/30 rounded-lg px-4 py-3 font-inter text-gray-100 focus:outline-none focus:border-event-gold transition-colors"
+                    aria-label="Location"
                   >
                     <option value="">Select location</option>
                     <option value="Siliguri">Siliguri</option>

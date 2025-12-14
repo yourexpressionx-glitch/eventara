@@ -60,6 +60,8 @@ export function Navbar() {
           <button
             className="md:hidden text-event-gold"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+            title="Toggle menu"
           >
             <svg
               className="w-6 h-6"
