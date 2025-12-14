@@ -2,10 +2,13 @@
 
 import { motion } from 'framer-motion';
 import { BLOG_ARTICLES } from '@/lib/blog-articles-with-content';
+import { useState } from 'react';
 
 export function BlogGrid() {
-  // Use first 6 articles from the comprehensive blog database
-  const blogPosts = BLOG_ARTICLES.slice(0, 6).map(article => ({
+  const POSTS_PER_PAGE = 12;
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const blogPosts = BLOG_ARTICLES.map(article => ({
     slug: article.slug,
     title: article.title,
     excerpt: article.excerpt,
@@ -17,6 +20,12 @@ export function BlogGrid() {
     category: article.category,
     readTime: `${article.readTime} min read`,
   }));
+
+  // Calculate pagination
+  const totalPages = Math.ceil(blogPosts.length / POSTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const endIndex = startIndex + POSTS_PER_PAGE;
+  const displayedPosts = blogPosts.slice(startIndex, endIndex);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -38,14 +47,15 @@ export function BlogGrid() {
   return (
     <section className="py-20 bg-rich-black px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
+        {/* Blog Posts Grid */}
         <motion.div
-          className="grid gap-8"
+          className="grid gap-8 mb-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {blogPosts.map((post, idx) => (
+          {displayedPosts.map((post, idx) => (
             <motion.a
               key={idx}
               href={`/blog/${post.slug}`}
@@ -76,9 +86,67 @@ export function BlogGrid() {
           ))}
         </motion.div>
 
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <motion.div
+            className="flex items-center justify-center gap-2 mb-12"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            {/* Previous Button */}
+            <button
+              onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className="px-4 py-2 bg-event-gold/10 border border-event-gold/30 text-event-gold rounded hover:bg-event-gold/20 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              ← Previous
+            </button>
+
+            {/* Page Numbers */}
+            <div className="flex gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                <button
+                  key={pageNum}
+                  onClick={() => setCurrentPage(pageNum)}
+                  className={`px-3 py-2 rounded font-inter text-sm transition-colors ${
+                    pageNum === currentPage
+                      ? 'bg-event-gold text-rich-black font-bold'
+                      : 'bg-event-gold/10 border border-event-gold/30 text-event-gold hover:bg-event-gold/20'
+                  }`}
+                >
+                  {pageNum}
+                </button>
+              ))}
+            </div>
+
+            {/* Next Button */}
+            <button
+              onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 bg-event-gold/10 border border-event-gold/30 text-event-gold rounded hover:bg-event-gold/20 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              Next →
+            </button>
+          </motion.div>
+        )}
+
+        {/* Pagination Info */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
+          <p className="font-inter text-gray-400 text-sm">
+            Showing {startIndex + 1} - {Math.min(endIndex, blogPosts.length)} of {blogPosts.length} articles
+            {totalPages > 1 && ` (Page ${currentPage} of ${totalPages})`}
+          </p>
+        </motion.div>
+
         {/* Subscribe CTA */}
         <motion.div
-          className="mt-16 card-luxury p-8 text-center"
+          className="card-luxury p-8 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
