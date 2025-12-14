@@ -56,7 +56,7 @@ export function ContactPageContent() {
   return (
     <div className="pt-20 pb-20">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black px-4 md:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black px-3 sm:px-4 md:px-8">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}
@@ -65,13 +65,13 @@ export function ContactPageContent() {
         >
           <motion.h1
             variants={itemVariants}
-            className="font-playfair text-6xl md:text-7xl font-bold mb-6"
+            className="font-playfair text-4xl sm:text-5xl md:text-7xl font-bold mb-6"
           >
             <span className="text-gradient">Let's Create Magic</span>
           </motion.h1>
           <motion.p
             variants={itemVariants}
-            className="font-inter text-lg text-cream-light/70"
+            className="font-inter text-sm sm:text-base md:text-lg text-cream-light/70"
           >
             Reach out to our team and let's discuss your event vision
           </motion.p>
@@ -79,10 +79,10 @@ export function ContactPageContent() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 md:px-8">
+      <section className="py-12 sm:py-16 md:py-20 px-3 sm:px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 gap-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -93,7 +93,7 @@ export function ContactPageContent() {
               variants={itemVariants}
               className="space-y-8"
             >
-              <h2 className="font-playfair text-4xl font-bold text-event-gold">
+              <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-event-gold">
                 Get In Touch
               </h2>
 

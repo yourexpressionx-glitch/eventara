@@ -21,7 +21,7 @@ export function Breadcrumb({
   const displayLocation = capitalize(locationDisplay);
 
   return (
-    <nav className="breadcrumb-container py-4 px-4 md:px-8 bg-gradient-to-r from-black via-black to-black/95">
+    <nav className="breadcrumb-container py-4 px-3 sm:px-4 md:px-8 bg-gradient-to-r from-black via-black to-black/95">
       <ol className="flex flex-wrap items-center gap-2 max-w-6xl mx-auto">
         <li>
           <Link

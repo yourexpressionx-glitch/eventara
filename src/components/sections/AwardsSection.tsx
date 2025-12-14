@@ -28,7 +28,7 @@ export function AwardsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900/30 via-rich-black to-gray-900/30 px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-900/30 via-rich-black to-gray-900/30 px-3 sm:px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -43,7 +43,7 @@ export function AwardsSection() {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

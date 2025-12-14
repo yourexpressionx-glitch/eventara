@@ -26,7 +26,7 @@ export function AboutHero() {
       <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-event-gold opacity-5 blur-3xl" />
 
       <motion.div
-        className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 py-20"
+        className="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 md:px-8 py-12 sm:py-16 md:py-20"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -43,7 +43,7 @@ export function AboutHero() {
 
         <motion.h1
           variants={itemVariants}
-          className="font-playfair text-6xl md:text-7xl font-bold mb-6 text-white"
+          className="font-playfair text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-bold mb-6 text-white"
         >
           Crafting Unforgettable
           <br />
@@ -52,7 +52,7 @@ export function AboutHero() {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-xl text-cream-light/90 mb-8"
+          className="max-w-2xl font-inter text-sm sm:text-base md:text-xl text-cream-light/90 mb-8"
         >
           Eventara has been the trusted partner for luxury event management across
           the Siliguri Corridor and Darjeeling Himalayan region for over 15 years.

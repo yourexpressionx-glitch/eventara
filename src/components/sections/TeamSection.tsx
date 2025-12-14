@@ -44,7 +44,7 @@ export function TeamSection() {
   ];
 
   return (
-    <section className="py-20 bg-rich-black px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -62,7 +62,7 @@ export function TeamSection() {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

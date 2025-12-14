@@ -31,7 +31,7 @@ export function ServiceCatalog() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black px-4 md:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-rich-black via-burgundy-dark to-rich-black px-3 sm:px-4 md:px-8">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}
@@ -55,7 +55,7 @@ export function ServiceCatalog() {
       </section>
 
       {/* Services by Category */}
-      <section className="py-20 px-4 md:px-8">
+      <section className="py-12 sm:py-16 md:py-20 px-3 sm:px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           {[
             { title: 'Core Services', category: 'core' },
@@ -72,7 +72,7 @@ export function ServiceCatalog() {
                   {section.title}
                 </h2>
                 <motion.div
-                  className="grid md:grid-cols-2 gap-8"
+                  className="grid grid-cols-1 md:grid-cols-2 gap-8"
                   variants={containerVariants}
                   initial="hidden"
                   whileInView="visible"
@@ -119,7 +119,7 @@ export function ServiceCatalog() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-event-gold/10 to-light-gold/10 px-4 md:px-8">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-event-gold/10 to-light-gold/10 px-3 sm:px-4 md:px-8">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           variants={containerVariants}

@@ -52,7 +52,7 @@ export function LocationTestimonials({ location }: LocationTestimonialsProps) {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -71,7 +71,7 @@ export function LocationTestimonials({ location }: LocationTestimonialsProps) {
 
         {/* Testimonials Grid */}
         <motion.div
-          className="grid md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

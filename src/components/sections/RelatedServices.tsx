@@ -33,7 +33,7 @@ export function RelatedServices({
   ).slice(0, Math.ceil(limit / 2));
 
   return (
-    <section className="related-services-section py-12 px-4 md:px-8 bg-gradient-to-b from-black/50 to-black/80 border-t border-gold/20">
+    <section className="related-services-section py-12 px-3 sm:px-4 md:px-8 bg-gradient-to-b from-black/50 to-black/80 border-t border-gold/20">
       <div className="max-w-6xl mx-auto">
         {/* Related Services */}
         {relatedServices.length > 0 && (

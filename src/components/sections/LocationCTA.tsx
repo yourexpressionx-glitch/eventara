@@ -37,7 +37,7 @@ export function LocationCTA({ location }: LocationCTAProps) {
       <div className="absolute inset-0 bg-rich-black" />
 
       <motion.div
-        className="relative z-10 max-w-5xl mx-auto px-4 md:px-8 text-center"
+        className="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 md:px-8 text-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -85,7 +85,7 @@ export function LocationCTA({ location }: LocationCTAProps) {
         {/* Trust signals */}
         <motion.div
           variants={itemVariants}
-          className="mt-16 grid md:grid-cols-3 gap-8"
+          className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
         >
           <div>
             <p className="font-playfair text-3xl font-bold text-event-gold mb-2">

@@ -67,7 +67,7 @@ export function LocationHero({ location }: LocationHeroProps) {
 
         <motion.h1
           variants={itemVariants}
-          className="max-w-4xl font-playfair text-6xl md:text-7xl font-bold leading-tight text-white mb-6"
+          className="max-w-4xl font-playfair text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-bold leading-tight text-white mb-6"
         >
           Premium Event Planning in
           <br />
@@ -78,18 +78,18 @@ export function LocationHero({ location }: LocationHeroProps) {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-lg md:text-xl text-cream-light/90 mb-8 leading-relaxed"
+          className="max-w-2xl font-inter text-sm sm:text-base md:text-sm sm:text-base md:text-xl text-cream-light/90 mb-8 leading-relaxed"
         >
           {location.description}. With 500+ events delivered and deep expertise in {location.name}'s unique venues and culture, Eventara creates unforgettable celebrations tailored to your vision.
         </motion.p>
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8"
         >
           <Link
             href="/contact"
-            className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl min-h-[48px] flex items-center justify-center"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-event-gold text-rich-black font-playfair font-bold text-sm sm:text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl min-h-[48px] flex items-center justify-center"
             title="Get free event planning consultation"
           >
             Get Free Consultation
@@ -99,7 +99,7 @@ export function LocationHero({ location }: LocationHeroProps) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
-            className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center"
+            className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-event-gold text-event-gold font-inter font-semibold text-sm sm:text-base rounded-lg hover:bg-event-gold/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center"
             title="Chat with us on WhatsApp"
           >
             Chat on WhatsApp
@@ -109,26 +109,26 @@ export function LocationHero({ location }: LocationHeroProps) {
         {/* Location Stats */}
         <motion.div
           variants={itemVariants}
-          className="mt-12 pt-8 border-t border-event-gold/20 w-full max-w-3xl"
+          className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-event-gold/20 w-full max-w-3xl"
         >
-          <div className="grid grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-3 gap-4 sm:gap-4 sm:gap-6 md:gap-8 text-center">
             <div>
-              <div className="font-playfair text-3xl font-bold text-event-gold mb-1">
+              <div className="font-playfair text-xl sm:text-2xl md:text-3xl font-bold text-event-gold mb-1">
                 {location.elevation}
               </div>
-              <div className="font-inter text-sm text-cream-light/70">Elevation</div>
+              <div className="font-inter text-xs sm:text-sm text-cream-light/70">Elevation</div>
             </div>
             <div>
-              <div className="font-playfair text-3xl font-bold text-event-gold mb-1">
+              <div className="font-playfair text-xl sm:text-2xl md:text-3xl font-bold text-event-gold mb-1">
                 {location.bestTime}
               </div>
-              <div className="font-inter text-sm text-cream-light/70">Best Season</div>
+              <div className="font-inter text-xs sm:text-sm text-cream-light/70">Best Season</div>
             </div>
             <div>
-              <div className="font-playfair text-3xl font-bold text-event-gold mb-1">
+              <div className="font-playfair text-xl sm:text-2xl md:text-3xl font-bold text-event-gold mb-1">
                 {location.averageTemp}
               </div>
-              <div className="font-inter text-sm text-cream-light/70">Avg Temperature</div>
+              <div className="font-inter text-xs sm:text-sm text-cream-light/70">Avg Temperature</div>
             </div>
           </div>
         </motion.div>

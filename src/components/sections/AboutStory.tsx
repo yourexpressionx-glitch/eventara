@@ -21,10 +21,10 @@ export function AboutStory() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-5xl mx-auto">
         <motion.div
-          className="grid md:grid-cols-2 gap-12 items-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

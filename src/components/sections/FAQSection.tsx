@@ -57,7 +57,7 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div

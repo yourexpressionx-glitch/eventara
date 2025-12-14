@@ -28,7 +28,7 @@ export function CTASection({
   };
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-rich-black via-burgundy-dark to-rich-black px-4 md:px-8 overflow-hidden">
+    <section className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-rich-black via-burgundy-dark to-rich-black px-3 sm:px-4 md:px-8 overflow-hidden">
       {/* Accent Blurs */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-event-gold opacity-5 blur-3xl rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-light-gold opacity-5 blur-3xl rounded-full" />

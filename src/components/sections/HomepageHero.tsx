@@ -52,7 +52,7 @@ export function HomepageHero() {
 
         <motion.h1
           variants={itemVariants}
-          className="max-w-5xl font-playfair text-6xl md:text-7xl font-bold leading-tight text-white mb-6"
+          className="max-w-5xl font-playfair text-3xl sm:text-3xl sm:text-5xl md:text-7xl font-bold leading-tight text-white mb-6"
         >
           Your Luxury Event Deserves
           <br />
@@ -63,14 +63,14 @@ export function HomepageHero() {
 
         <motion.p
           variants={itemVariants}
-          className="max-w-2xl font-inter text-lg md:text-xl text-cream-light/90 mb-8 leading-relaxed"
+          className="max-w-2xl font-inter text-sm sm:text-base md:text-lg lg:text-sm sm:text-base md:text-xl text-cream-light/90 mb-8 leading-relaxed"
         >
           Eventara has transformed 500+ destination weddings, corporate summits, and luxury events across Darjeeling, Siliguri, and the Northeast. With 15 years of expertise, our award-winning team orchestrates every detail—from pandal artistry to seamless logistics—ensuring your vision becomes an unforgettable reality.
         </motion.p>
 
         <motion.div
           variants={itemVariants}
-          className="flex items-center gap-3 justify-center mb-6 text-sm text-event-gold font-semibold"
+          className="flex items-center gap-2 sm:gap-3 justify-center mb-6 text-xs sm:text-sm text-event-gold font-semibold"
         >
           <span>⏰ Peak Season Dates Fill Fast—</span>
           <span className="animate-pulse">Book Your Date Now</span>
@@ -78,18 +78,18 @@ export function HomepageHero() {
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
         >
           <Link
             href="/contact"
-            className="px-8 py-4 bg-event-gold text-rich-black font-playfair font-bold text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl min-h-[48px] flex items-center justify-center"
+            className="px-6 sm:px-8 py-3 sm:py-4 bg-event-gold text-rich-black font-playfair font-bold text-sm sm:text-lg rounded-lg hover:bg-light-gold transition-colors duration-300 shadow-lg hover:shadow-xl min-h-[48px] flex items-center justify-center"
             title="Get free event planning consultation"
           >
             Get Free Consultation
           </Link>
           <Link
             href="/#services"
-            className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold rounded-lg hover:bg-event-gold/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center"
+            className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-event-gold text-event-gold font-inter font-semibold text-sm sm:text-base rounded-lg hover:bg-event-gold/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center"
             title="Explore our event services"
           >
             Explore All Services
@@ -105,19 +105,19 @@ export function HomepageHero() {
 
         <motion.div
           variants={itemVariants}
-          className="mt-16 pt-8 border-t border-event-gold/20 w-full max-w-2xl"
+          className="mt-8 sm:mt-16 pt-6 sm:pt-8 border-t border-event-gold/20 w-full max-w-2xl"
         >
-          <div className="grid grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-3 gap-4 sm:gap-4 sm:gap-6 md:gap-8 text-center">
             {[
               { label: '500+', desc: 'Events Delivered', subtext: '15 years of excellence' },
               { label: '98%', desc: 'Client Satisfaction', subtext: 'Repeat & referral rate' },
               { label: '7', desc: 'Prime Locations', subtext: 'Northeast India coverage' },
             ].map((stat, idx) => (
               <motion.div key={idx} variants={itemVariants}>
-                <div className="font-playfair text-3xl font-bold text-event-gold">
+                <div className="font-playfair text-xl sm:text-2xl md:text-3xl font-bold text-event-gold">
                   {stat.label}
                 </div>
-                <div className="font-inter text-sm text-cream-light/70">{stat.desc}</div>
+                <div className="font-inter text-xs sm:text-sm text-cream-light/70">{stat.desc}</div>
                 <div className="font-inter text-xs text-cream-light/50 mt-1">{stat.subtext}</div>
               </motion.div>
             ))}

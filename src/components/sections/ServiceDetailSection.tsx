@@ -59,7 +59,7 @@ export function ServiceDetailSection({
   ];
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/50 to-rich-black px-4 md:px-8">
+    <section className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/50 to-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Main Value Proposition with Emotional Trigger */}
         <motion.div
@@ -87,7 +87,7 @@ export function ServiceDetailSection({
 
         {/* Benefits Grid */}
         <motion.div
-          className="grid md:grid-cols-3 gap-6 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -140,7 +140,7 @@ export function ServiceDetailSection({
 
         {/* Local Expertise + CTA Section */}
         <motion.div
-          className="grid md:grid-cols-2 gap-12 items-center mb-16"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center mb-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

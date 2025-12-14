@@ -33,7 +33,7 @@ export function ServiceGrid() {
   const techServices = SERVICES.filter((s) => s.category === 'tech');
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-4 md:px-8">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-rich-black via-burgundy-dark/30 to-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -43,10 +43,10 @@ export function ServiceGrid() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="font-playfair text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
             <span className="text-gradient">Complete Event Solutions</span>
           </h2>
-          <p className="font-inter text-cream-light/90 text-lg max-w-2xl mx-auto">
+          <p className="font-inter text-cream-light/90 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
             From concept to execution, we handle every detail so you can focus on memories. Our certified planners have orchestrated 500+ events with 98% client satisfaction.
           </p>
         </motion.div>
@@ -57,7 +57,7 @@ export function ServiceGrid() {
             Core Services
           </h3>
           <motion.div
-            className="grid md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -75,7 +75,7 @@ export function ServiceGrid() {
             Local Specialty Services
           </h3>
           <motion.div
-            className="grid md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -93,7 +93,7 @@ export function ServiceGrid() {
             Tech & Support Services
           </h3>
           <motion.div
-            className="grid md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"

@@ -61,7 +61,7 @@ export function LocationFAQ({ location }: LocationFAQProps) {
   };
 
   return (
-    <section className="py-20 bg-rich-black px-4 md:px-8">
+    <section className="py-12 sm:py-16 md:py-20 bg-rich-black px-3 sm:px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         <motion.div
           className="text-center mb-16"
