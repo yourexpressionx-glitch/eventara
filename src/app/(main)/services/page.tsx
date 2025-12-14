@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { ServiceCatalog } from '@/components/sections/ServiceCatalog';
 import { EnhancedServicesSchema } from '@/components/seo/EnhancedServicesSchema';
 import { EventManagementFAQSchema } from '@/components/seo/EventManagementFAQSchema';
+import { LeadMagnetsSection } from '@/components/sections/LeadMagnetsSection';
 
 export const metadata: Metadata = {
   title: 'Event Planning Services | Eventara',
@@ -31,6 +32,7 @@ export default function ServicesPage() {
       <EnhancedServicesSchema />
       <EventManagementFAQSchema />
       <ServiceCatalog />
+      <LeadMagnetsSection />
     </>
   );
 }

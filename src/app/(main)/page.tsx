@@ -30,6 +30,7 @@ import { HomepageHero } from '@/components/sections/HomepageHero';
 import { ServiceGrid } from '@/components/sections/ServiceGrid';
 import { LocationGrid } from '@/components/sections/LocationGrid';
 import { TestimonialSection } from '@/components/sections/TestimonialSection';
+import { LeadMagnetsSection } from '@/components/sections/LeadMagnetsSection';
 import { FAQSection } from '@/components/sections/FAQSection';
 
 const homepageFAQs = [
@@ -58,6 +59,7 @@ export default function Home() {
       <HomepageHero />
       <ServiceGrid />
       <LocationGrid />
+      <LeadMagnetsSection />
       <TestimonialSection />
       <FAQSection />
     </>

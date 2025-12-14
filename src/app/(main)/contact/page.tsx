@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { ContactSchema } from '@/components/seo/ContactSchema';
+import { ContactPageContent } from '@/components/sections/ContactPageContent';
+import { InlineLeadMagnet } from '@/components/sections/InlineLeadMagnet';
 
 export const metadata: Metadata = {
   title: 'Contact Eventara | Book Event Planning Services | Darjeeling, Siliguri',
@@ -15,13 +17,22 @@ export const metadata: Metadata = {
   ],
 };
 
-import { ContactPageContent } from '@/components/sections/ContactPageContent';
-
 export default function ContactPage() {
   return (
     <>
       <ContactSchema />
-      <ContactPageContent />
+      <div className="space-y-12">
+        <ContactPageContent />
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
+          <h2 className="text-3xl font-playfair font-bold text-event-gold mb-8 text-center">
+            Before You Contact Us
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <InlineLeadMagnet magnet="checklist" layout="vertical" />
+            <InlineLeadMagnet magnet="budget" layout="vertical" />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
