@@ -1,16 +1,11 @@
 import { NextResponse } from 'next/server';
 
+// Security headers are now set via next.config.js headers configuration
+// Middleware disabled due to Edge Runtime limitations causing MIDDLEWARE_INVOCATION_FAILED errors
+// on some deployments. Headers are configured at build time instead.
+
 export function middleware() {
-  const response = NextResponse.next();
-
-  // Add security headers
-  response.headers.set('X-Content-Type-Options', 'nosniff');
-  response.headers.set('X-Frame-Options', 'SAMEORIGIN');
-  response.headers.set('X-XSS-Protection', '1; mode=block');
-  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-  response.headers.set('Permissions-Policy', 'geolocation=(), microphone=(), camera=()');
-
-  return response;
+  return NextResponse.next();
 }
 
 export const config = {
