@@ -51,7 +51,18 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <button className="px-6 py-2 bg-event-gold text-rich-black font-semibold rounded-lg hover:bg-light-gold transition-colors">
+            <button 
+              className="px-6 py-2 bg-event-gold text-rich-black font-semibold rounded-lg hover:bg-light-gold transition-colors"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'button_click', {
+                    button_name: 'navbar_enquire_now',
+                    device_type: window.innerWidth < 768 ? 'mobile' : 'desktop',
+                  });
+                }
+                window.location.href = '/contact';
+              }}
+            >
               Enquire Now
             </button>
           </div>
@@ -97,7 +108,19 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <button className="w-full px-4 py-2 bg-event-gold text-rich-black font-semibold rounded-lg">
+            <button 
+              className="w-full px-4 py-2 bg-event-gold text-rich-black font-semibold rounded-lg"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'button_click', {
+                    button_name: 'mobile_menu_enquire_now',
+                    device_type: 'mobile',
+                  });
+                }
+                setIsOpen(false);
+                window.location.href = '/contact';
+              }}
+            >
               Enquire Now
             </button>
           </motion.div>

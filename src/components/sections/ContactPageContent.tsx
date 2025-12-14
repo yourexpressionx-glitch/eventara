@@ -38,6 +38,15 @@ export function ContactPageContent() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Track GA4 event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'form_submit', {
+        form_name: 'contact_form',
+        event_type: formData.eventType,
+        location: formData.location,
+        device_type: window.innerWidth < 768 ? 'mobile' : 'desktop',
+      });
+    }
     // Create WhatsApp message
     const message = `Hi Eventara, I'd like to inquire about ${formData.eventType} in ${formData.location}. Name: ${formData.name}, Email: ${formData.email}, Phone: ${formData.phone}. ${formData.message}`;
     const waLink = `https://wa.me/919332345023?text=${encodeURIComponent(message)}`;
@@ -73,7 +82,7 @@ export function ContactPageContent() {
       <section className="py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            className="grid md:grid-cols-2 gap-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-12"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"

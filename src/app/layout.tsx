@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
+import { StickyWhatsAppButton } from '@/components/ui/StickyWhatsAppButton';
 import { OrganizationSchema } from '@/components/seo/ServiceSchema';
 import './globals.css';
 
@@ -57,6 +58,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Register service worker for caching
+  if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {
+        // Service worker registration failed, continue without offline support
+      });
+    });
+  }
+
   return (
     <html
       lang="en"
@@ -80,6 +90,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <StickyWhatsAppButton />
       </body>
     </html>
   );

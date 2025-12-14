@@ -51,6 +51,21 @@
   .blur-gold {
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
   }
+
+  /* Mobile Touch Targets - 48px minimum */
+  @media (max-width: 640px) {
+    button,
+    a[role="button"],
+    input[type="button"],
+    input[type="submit"],
+    select,
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      min-height: 48px;
+    }
+  }
 }
 
 /* Smooth scrollbar */
