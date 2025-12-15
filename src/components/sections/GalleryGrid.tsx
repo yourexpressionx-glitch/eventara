@@ -4,12 +4,36 @@ import { motion } from 'framer-motion';
 
 export function GalleryGrid() {
   const galleryItems = [
-    { title: 'Royal Wedding - Darjeeling', category: 'Weddings' },
-    { title: 'Corporate Summit 2023', category: 'Corporate' },
-    { title: 'Destination Wedding - Mirik', category: 'Weddings' },
-    { title: 'Birthday Bash - Siliguri', category: 'Private Events' },
-    { title: 'Pandal Decoration - Siliguri', category: 'Pandal Events' },
-    { title: 'Wedding Reception - Kalimpong', category: 'Weddings' },
+    { 
+      title: 'Royal Wedding - Darjeeling', 
+      category: 'Weddings',
+      image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=500&h=400&fit=crop'
+    },
+    { 
+      title: 'Corporate Summit 2023', 
+      category: 'Corporate',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop'
+    },
+    { 
+      title: 'Destination Wedding - Mirik', 
+      category: 'Weddings',
+      image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=400&fit=crop'
+    },
+    { 
+      title: 'Birthday Bash - Siliguri', 
+      category: 'Private Events',
+      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=400&fit=crop'
+    },
+    { 
+      title: 'Pandal Decoration - Siliguri', 
+      category: 'Pandal Events',
+      image: 'https://images.unsplash.com/photo-1540575467063-178f50002dc9?w=500&h=400&fit=crop'
+    },
+    { 
+      title: 'Wedding Reception - Kalimpong', 
+      category: 'Weddings',
+      image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=400&fit=crop'
+    },
   ];
 
   const containerVariants = {
@@ -44,7 +68,8 @@ export function GalleryGrid() {
               key={idx}
               variants={itemVariants}
               whileHover={{ translateY: -8 }}
-              className="card-luxury overflow-hidden h-64 flex items-end p-6 relative group cursor-pointer"
+              className="card-luxury overflow-hidden h-64 flex items-end p-6 relative group cursor-pointer bg-cover bg-center"
+              style={{ backgroundImage: `url(${item.image})` }}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-rich-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
@@ -67,14 +92,30 @@ export function GalleryGrid() {
             View more events on our social media
           </p>
           <div className="flex justify-center gap-4">
-            {['Instagram', 'Facebook', 'YouTube'].map((social) => (
-              <button
-                key={social}
-                className="px-6 py-2 border border-event-gold text-event-gold rounded-lg hover:bg-event-gold/10 transition-colors"
-              >
-                {social}
-              </button>
-            ))}
+            <a
+              href="https://www.instagram.com/eventaraevents/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 border border-event-gold text-event-gold rounded-lg hover:bg-event-gold/10 transition-colors"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61577290076145"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 border border-event-gold text-event-gold rounded-lg hover:bg-event-gold/10 transition-colors"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.youtube.com/@eventara"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 border border-event-gold text-event-gold rounded-lg hover:bg-event-gold/10 transition-colors"
+            >
+              YouTube
+            </a>
           </div>
         </motion.div>
       </div>
