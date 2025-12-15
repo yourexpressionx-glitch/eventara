@@ -73,7 +73,7 @@ export function CTASection({
 
           {/* Email Button */}
           <motion.a
-            href="mailto:info@eventara.com"
+            href="mailto:eventaraevent@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 border-2 border-event-gold text-event-gold font-inter font-semibold text-lg rounded-lg hover:bg-event-gold/10 transition-colors inline-flex items-center justify-center gap-3"

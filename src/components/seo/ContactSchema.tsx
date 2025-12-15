@@ -6,7 +6,7 @@ export function ContactSchema() {
     description: 'Luxury event management and planning services',
     url: 'https://eventara.com',
     telephone: '+91-9332-345023',
-    email: 'info@eventara.com',
+    email: 'eventaraevent@gmail.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Siliguri, West Bengal',

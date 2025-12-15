@@ -107,8 +107,8 @@ export function ContactPageContent() {
                 {
                   icon: '📧',
                   title: 'Email',
-                  value: 'info@eventara.com',
-                  href: 'mailto:info@eventara.com',
+                  value: 'eventaraevent@gmail.com',
+                  href: 'mailto:eventaraevent@gmail.com',
                 },
                 {
                   icon: '☎️',

@@ -84,7 +84,7 @@ export function LocationBasedLocalBusinessSchema({
     url: `https://eventaraevents.com/${service}-${location}`,
     image: 'https://eventaraevents.com/og-image.jpg',
     telephone: '+91-9332345023',
-    email: 'contact@eventaraevents.com',
+    email: 'eventaraevent@gmail.com',
     priceRange: '₹50000 - ₹10000000',
     address: {
       '@type': 'PostalAddress',
@@ -133,7 +133,7 @@ export function LocationBasedLocalBusinessSchema({
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
       telephone: '+91-9332345023',
-      email: 'contact@eventaraevents.com',
+      email: 'eventaraevent@gmail.com',
       areaServed: ['IN'],
       availableLanguage: ['en', 'hi'],
     },

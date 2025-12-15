@@ -5,7 +5,7 @@ import { InlineLeadMagnet } from '@/components/sections/InlineLeadMagnet';
 
 export const metadata: Metadata = {
   title: 'Contact Eventara | Book Event Planning Services | Darjeeling, Siliguri',
-  description: 'Contact Eventara luxury event management. Phone: +91-9332-345023 | WhatsApp available | Email: info@eventara.com. Free consultation for weddings & corporate events in Darjeeling, Siliguri.',
+  description: 'Contact Eventara luxury event management. Phone: +91-9332-345023 | WhatsApp available | Email: eventaraevent@gmail.com. Free consultation for weddings & corporate events in Darjeeling, Siliguri.',
   keywords: [
     'contact eventara',
     'event planning services',

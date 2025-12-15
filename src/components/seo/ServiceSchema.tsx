@@ -23,7 +23,7 @@ export function ServiceSchema({
     url: `${siteURL}/${service}-${location}`,
     description: description,
     telephone: '+919999999999', // Update with actual phone
-    email: 'contact@eventaraevents.com',
+    email: 'eventaraevent@gmail.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Event Planning Centre', // Update with actual address
@@ -122,7 +122,7 @@ export function OrganizationSchema({
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
       telephone: '+919999999999',
-      email: 'contact@eventaraevents.com',
+      email: 'eventaraevent@gmail.com',
       areaServed: ['IN'],
       availableLanguageID: ['en', 'hi'],
     },

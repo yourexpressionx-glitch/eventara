@@ -155,10 +155,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@eventara.com"
+                  href="mailto:eventaraevent@gmail.com"
                   className="hover:text-event-gold transition-colors"
                 >
-                  info@eventara.com
+                  eventaraevent@gmail.com
                 </a>
               </li>
               <li>

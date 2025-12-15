@@ -25,7 +25,7 @@ export function JsonLd({ service, location, url }: JsonLdProps) {
         image: 'https://eventara.com/logo.png',
         url: 'https://eventara.com',
         telephone: '+91-9332345023',
-        email: 'info@eventara.com',
+        email: 'eventaraevent@gmail.com',
         address: {
           '@type': 'PostalAddress',
           addressCountry: 'IN',

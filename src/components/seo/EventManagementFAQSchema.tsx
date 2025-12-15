@@ -44,7 +44,7 @@ export function EventManagementFAQSchema() {
     {
       question: 'How can I contact Eventara for event planning?',
       answer:
-        'You can contact Eventara via WhatsApp at +91-9332345023, email at contact@eventaraevents.com, or fill out the contact form on our website. We offer free consultation for event planning requirements.',
+        'You can contact Eventara via WhatsApp at +91-9332345023, email at eventaraevent@gmail.com, or fill out the contact form on our website. We offer free consultation for event planning requirements.',
     },
     {
       question: 'Does Eventara offer customized event packages?',

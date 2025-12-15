@@ -39,7 +39,7 @@ export function EventManagementCompanySchema() {
           '@type': 'ContactPoint',
           contactType: 'Customer Service',
           telephone: '+91-9332345023',
-          email: 'contact@eventaraevents.com',
+          email: 'eventaraevent@gmail.com',
           areaServed: ['IN'],
           availableLanguage: ['en', 'hi'],
         },
@@ -169,7 +169,7 @@ export function EventManagementCompanySchema() {
           addressCountry: 'IN',
         },
         telephone: '+91-9332345023',
-        email: 'contact@eventaraevents.com',
+        email: 'eventaraevent@gmail.com',
         url: 'https://eventaraevents.com',
         priceRange: '₹50000 - ₹10000000',
         aggregateRating: {
