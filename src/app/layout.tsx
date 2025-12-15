@@ -85,7 +85,9 @@ export default function RootLayout({
         {/* Favicon & Manifest */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="manifest" href="/manifest.json" />
+        {/* Apple touch icon - uses SVG fallback (modern devices support SVG) */}
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
         
         {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
         <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />

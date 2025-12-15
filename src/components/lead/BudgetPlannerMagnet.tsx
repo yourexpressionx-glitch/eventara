@@ -149,10 +149,9 @@ export function BudgetPlannerMagnet() {
                     </div>
                     <div className="w-full bg-rich-black/50 rounded h-2">
                       <div
-                        className="bg-gradient-to-r from-event-gold to-light-gold rounded h-2 transition-all duration-500"
+                        className="bg-gradient-to-r from-event-gold to-light-gold rounded h-2 transition-all duration-500 progress-bar"
                         style={{
                           width: `${item.percentage}%`,
-                          willChange: 'width',
                         }}
                       />
                     </div>
