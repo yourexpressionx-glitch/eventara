@@ -5,7 +5,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
-import { StickyWhatsAppButton } from '@/components/ui/StickyWhatsAppButton';
+import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import { ServiceWorkerRegistry } from '@/components/ui/ServiceWorkerRegistry';
 import { OrganizationSchema } from '@/components/seo/ServiceSchema';
 import { EventManagementCompanySchema } from '@/components/seo/EventManagementCompanySchema';
@@ -150,7 +150,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <StickyWhatsAppButton />
+        <WhatsAppButton />
         <ServiceWorkerRegistry />
         <SpeedInsights />
         <Analytics />
