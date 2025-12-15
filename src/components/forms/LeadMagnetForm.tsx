@@ -104,20 +104,20 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       onSubmit={handleSubmit}
-      className="space-y-4"
+      className="space-y-3"
     >
       {error && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm"
+          className="p-2 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-xs"
         >
           {error}
         </motion.div>
       )}
 
       <div>
-        <label htmlFor="name" className="block text-sm font-semibold text-cream-light mb-2">
+        <label htmlFor="name" className="block text-xs font-semibold text-cream-light mb-1">
           Full Name *
         </label>
         <input
@@ -129,13 +129,13 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
             setFormData({ ...formData, name: e.target.value });
             setError('');
           }}
-          className="w-full px-4 py-3 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
+          className="w-full px-3 py-2 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light text-sm placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
           placeholder="Your name"
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-semibold text-cream-light mb-2">
+        <label htmlFor="email" className="block text-xs font-semibold text-cream-light mb-1">
           Email Address *
         </label>
         <input
@@ -147,13 +147,13 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
             setFormData({ ...formData, email: e.target.value });
             setError('');
           }}
-          className="w-full px-4 py-3 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
+          className="w-full px-3 py-2 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light text-sm placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
           placeholder="your.email@example.com"
         />
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-semibold text-cream-light mb-2">
+        <label htmlFor="phone" className="block text-xs font-semibold text-cream-light mb-1">
           Phone Number *
         </label>
         <input
@@ -165,7 +165,7 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
             setFormData({ ...formData, phone: e.target.value });
             setError('');
           }}
-          className="w-full px-4 py-3 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
+          className="w-full px-3 py-2 bg-rich-black border border-event-gold/30 rounded-lg text-cream-light text-sm placeholder-cream-light/50 focus:outline-none focus:border-event-gold focus:ring-2 focus:ring-event-gold/20"
           placeholder="+91 9876543210"
         />
       </div>
@@ -173,7 +173,7 @@ export function LeadMagnetForm({ magnet, onSubmit, isLoading = false }: LeadMagn
       <button
         type="submit"
         disabled={isLoading || isSubmitting}
-        className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed font-playfair text-lg"
+        className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed font-playfair text-base py-2"
       >
         {isSubmitting || isLoading ? 'Processing...' : `Get ${magnetTitle[magnet].split(' ').pop()}`}
       </button>

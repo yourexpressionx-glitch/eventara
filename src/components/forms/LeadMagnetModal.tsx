@@ -127,41 +127,41 @@ export function LeadMagnetModal({
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md mx-4"
+            className="fixed inset-4 top-1/2 -translate-y-1/2 z-50 w-full max-w-md mx-auto my-auto max-h-[85vh] overflow-y-auto"
           >
             <div className="bg-gradient-to-br from-rich-black to-burgundy-dark border border-event-gold/30 rounded-xl shadow-2xl overflow-hidden">
               {/* Header */}
-              <div className={`bg-gradient-to-r ${data.color} p-6 relative`}>
+              <div className={`bg-gradient-to-r ${data.color} p-5 relative sticky top-0`}>
                 <button
                   onClick={onClose}
-                  className="absolute top-4 right-4 text-rich-black hover:scale-110 transition-transform"
+                  className="absolute top-3 right-3 text-rich-black hover:scale-110 transition-transform text-2xl"
                 >
                   ✕
                 </button>
-                <div className="text-4xl mb-3">{data.icon}</div>
-                <h2 className="text-2xl font-playfair font-bold text-rich-black">
+                <div className="text-4xl mb-2">{data.icon}</div>
+                <h2 className="text-xl font-playfair font-bold text-rich-black leading-tight pr-8">
                   {data.title}
                 </h2>
-                <p className="text-rich-black/80 text-sm mt-2">{data.description}</p>
+                <p className="text-rich-black/80 text-xs mt-1 leading-snug">{data.description}</p>
               </div>
 
               {/* Highlights */}
-              <div className="px-6 py-4 border-b border-event-gold/20">
-                <p className="text-xs text-cream-light/60 mb-3 font-semibold">
+              <div className="px-5 py-3 border-b border-event-gold/20">
+                <p className="text-xs text-cream-light/60 mb-2 font-semibold">
                   WHAT YOU'LL GET:
                 </p>
-                <ul className="space-y-2">
+                <ul className="space-y-1">
                   {data.highlights.map((highlight) => (
-                    <li key={highlight} className="flex items-center text-sm text-cream-light">
-                      <span className="text-event-gold mr-2">✓</span>
-                      {highlight}
+                    <li key={highlight} className="flex items-start text-xs text-cream-light">
+                      <span className="text-event-gold mr-2 flex-shrink-0">✓</span>
+                      <span>{highlight}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               {/* Form */}
-              <div className="p-6">
+              <div className="p-5">
                 <LeadMagnetForm
                   magnet={magnet}
                   onSubmit={handleSubmit}
