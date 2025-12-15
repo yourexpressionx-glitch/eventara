@@ -1,31 +1,19 @@
-'use client';
-
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-rich-black text-cream-light flex flex-col items-center justify-center px-4">
-      <motion.div
-        className="text-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+    <div className="min-h-screen bg-rich-black text-cream-light flex flex-col items-center justify-center px-4 py-20">
+      <div className="text-center max-w-2xl">
         {/* 404 Text */}
-        <motion.div
-          className="mb-6"
-          animate={{ scale: [1, 1.05, 1] }}
-          transition={{ duration: 3, repeat: Infinity }}
-        >
-          <h1 className="text-9xl font-bold text-event-gold mb-2">404</h1>
-          <p className="text-2xl font-playfair text-cream-light mb-4">
-            Page Not Found
-          </p>
-        </motion.div>
+        <h1 className="text-8xl md:text-9xl font-bold text-event-gold mb-4">
+          404
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-playfair text-cream-light mb-4">
+          Page Not Found
+        </h2>
 
         {/* Description */}
-        <p className="text-cream-light/70 text-lg max-w-md mx-auto mb-8">
+        <p className="text-cream-light/70 text-base md:text-lg max-w-md mx-auto mb-8">
           The page you're looking for doesn't exist or has been moved. Let's get
           you back on track.
         </p>
@@ -48,31 +36,38 @@ export default function NotFound() {
 
         {/* Popular Links */}
         <div className="text-sm text-cream-light/60">
-          <p className="mb-3">Popular Searches:</p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <p className="mb-4 font-semibold">Popular Pages:</p>
+          <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/"
               className="text-event-gold hover:text-light-gold transition-colors underline"
             >
-              Wedding Planner
+              Home
             </Link>
             <span>•</span>
             <Link
-              href="/siliguri"
+              href="/services"
               className="text-event-gold hover:text-light-gold transition-colors underline"
             >
-              Siliguri
+              Services
             </Link>
             <span>•</span>
             <Link
               href="/contact"
               className="text-event-gold hover:text-light-gold transition-colors underline"
             >
-              Contact Us
+              Contact
+            </Link>
+            <span>•</span>
+            <Link
+              href="/blog"
+              className="text-event-gold hover:text-light-gold transition-colors underline"
+            >
+              Blog
             </Link>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -82,3 +77,4 @@ export default function NotFound() {
     </div>
   );
 }
+
