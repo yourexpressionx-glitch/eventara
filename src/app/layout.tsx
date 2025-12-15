@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Navbar } from '@/components/ui/Navbar';
 import { Footer } from '@/components/ui/Footer';
 import { StickyWhatsAppButton } from '@/components/ui/StickyWhatsAppButton';
@@ -136,6 +137,7 @@ export default function RootLayout({
         <Footer />
         <StickyWhatsAppButton />
         <ServiceWorkerRegistry />
+        <SpeedInsights />
       </body>
     </html>
   );
