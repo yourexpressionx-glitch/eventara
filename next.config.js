@@ -78,6 +78,22 @@ const nextConfig = {
     ];
   },
 
+  // Redirects for non-existent pages
+  redirects: async () => {
+    return [
+      {
+        source: '/privacy',
+        destination: '/',
+        permanent: false,
+      },
+      {
+        source: '/terms',
+        destination: '/',
+        permanent: false,
+      },
+    ];
+  },
+
   // Performance optimizations
   productionBrowserSourceMaps: false,
 
