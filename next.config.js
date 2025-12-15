@@ -11,10 +11,19 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 
   // Compression
   compress: true,
+  
+  // Optimize for static generation
+  staticPageGenerationTimeout: 60,
 
   // Headers for caching
   headers: async () => {

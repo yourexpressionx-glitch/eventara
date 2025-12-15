@@ -15,12 +15,16 @@ const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  preload: true,
 });
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -91,6 +95,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
         
+        {/* Preload critical fonts to reduce CLS and FCP */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
         {/* Theme color - supported by Chrome, Safari, Edge; Firefox ignores it */}
         <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#D4AF37" media="(prefers-color-scheme: light)" />
@@ -98,6 +106,12 @@ export default function RootLayout({
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://eventaraevents.com" />
+        
+        {/* DNS Prefetch for faster third-party requests */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         
         {/* Alternate links for SEO */}
         <link rel="alternate" hrefLang="en-IN" href="https://eventaraevents.com" />
